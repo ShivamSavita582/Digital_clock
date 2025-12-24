@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock Design</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color:#fad;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .clock-container{
+            border: 2px solid black;
+            text-align: center;
+            font-size: large;
+            padding: 20px;
+            background: gray;
+        }
+        body::-webkit-scrollbar{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="clock-container">
+        <h1>00: 00: 00</h1></div>
+        <audio src="./clock-tick-tik-tak-76043.mp3" preload="auto"><audio>
+
+ <script>
+    
+    setInterval(()=>{
+        const element =document.querySelector('.clock-container')
+        const sound = document.querySelector('audio')
+    const time = new Date();
+    const option ={
+        timeZone :'Asia/Kolkata',
+        hour:'2-digit',
+        minute:'2-digit',
+        second:'2-digit'
+    }
+    element.textContent =time.toLocaleString('En-Us',option)
+    sound.play()
+
+    })
+ </script>           
+
+
+
+</body>
+</html>

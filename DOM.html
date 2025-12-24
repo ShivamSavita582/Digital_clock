@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: white;
+            background-color: gray;
+        }
+    </style>
+</head>
+<body>
+    <p onmouseover="say()">I ma para</p>
+    <h1 class="box">Suman, Web Dev Mastery</h1>
+    <button onClick="changeDark()">Change Dark</button>
+    <button onClick="changeLight()">Change Light</button>
+    <script>
+        let changeDark =()=>{
+            document.body.style.color='green';
+            document.body.style.backgroundColor='blue';
+        }
+        let changeLight =()=>{
+             document .body.innerHTML='wscube tech'   ;
+            
+            document.body.style.backgroundColor='yellow';
+        }
+        let say = ()=>{
+             document.querySelector('p').innerText='Mai bhalu hu'
+        }
+        // let elem = document.querySelector('h1');
+        // elem.style.color='yellow'
+        // elem.style.border='5px solid brown'
+       // elem.style.backgroundColor='white'
+       // elem.innerText='Kalu Pal'
+        //elem.textContent='hasina ben'
+        //elem.innerHTML='welcome to wsc be tech'
+
+        
+        // console.log(elem.innerHTML)
+        // console.log(elem.textContent )
+        // console.log(elem.innerText)
+        // console.log(elem.style)
+        // console.log(elem.className)
+        
+    </script>
+</body>
+</html>
